@@ -437,3 +437,230 @@ footer {
     width: 100%;
 }
 
+/****** Media queries ***********/
+
+@media (max-width: 1024px) {
+
+    .barre-filtres {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .barre-filtres .choix p {
+        font-size: 16px;
+    }
+
+    .barre-filtres .choix a {
+        padding: 4px 19px;
+        height: 50px;
+    }
+
+    .hebergements-et-populaires {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hebergements,
+    .populaires {
+        width: 100%;
+    }
+
+    .populaires {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .populaires .cartes-populaires {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 20px;
+    }
+
+    .cartes-populaires .carte-pop {
+        margin: 0;
+    }
+
+    .cartes-hebergements .cartes a {
+        width: 30%;
+        height: auto;
+    }
+
+    .carte-activite img {
+        height: 200px;
+    }
+
+    footer {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .conteneur-principal {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    header img {
+        margin: 20px;
+        padding: 0;
+    }
+
+    header .barre-de-navigation {
+        width: 100%;
+        height: auto;
+        gap: 0;
+        box-sizing: border-box;
+    }
+
+    .infos {
+        margin: 20px;
+    }
+
+    .barre-de-navigation a {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .barre-de-navigation a:hover {
+        border-top: none;
+    }
+
+    .barre-de-navigation .nav-hebergements,
+    .barre-de-navigation .nav-activites {
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom: solid 3px var(--couleur-fond-principale);
+    }
+
+    .nav-hebergements:hover,
+    .nav-activites:hover {
+        border-bottom: solid 3px var(--couleur-principale);
+        color: var(--couleur-principale);
+    }
+
+    .barre-filtres {
+        flex-direction: column;
+    }
+
+    .barre-filtres .choix {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        height: 125px;
+        gap: 20px 10px;
+    }
+
+    .barre-filtres .choix p {
+        font-size: 14px;
+    }
+
+    .barre-filtres .choix a {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .groupe-infos {
+        padding: 0 20px;
+        gap: 35px;
+    }
+
+    .titres {
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .titres h1 {
+        font-size: 22px;
+    }
+
+    .titres p {
+        font-size: 16px;
+    }
+
+    form {
+        display: flex;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    form .btn-texte {
+        display: none;
+    }
+
+    form .btn-loupe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--couleur-principale);
+        border: solid 1px var(--couleur-principale);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        position: absolute;
+        right: 20px;
+        padding: 0;
+        width: 49px;
+        height: 49px;
+        color: var(--couleur-blanche);
+    }
+
+    .hebergements-et-populaires {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .hebergements-et-populaires section {
+        border-radius: 0;
+    }
+
+    .hebergements-et-populaires .populaires {
+        margin: 0;
+        padding: 30px 20px;
+        gap: 15px;
+    }
+
+    .hebergements-et-populaires .hebergements {
+        margin: 0;
+        gap: 15px;
+        background-color: var(--couleur-blanche);
+        padding: 20px;
+    }
+
+    .populaires .cartes-populaires,
+    .hebergements .cartes-hebergements {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-activites {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-activites .cartes-activites {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
