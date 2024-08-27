@@ -259,4 +259,181 @@ form .btn-loupe {
     margin: 0;
 }
 
+/****** Hébergements & Populaires ***********/
+
+.hebergements-et-populaires {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.hebergements-et-populaires section {
+    background-color: var(--couleur-fond-principale);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.hebergements-et-populaires p {
+    font-size: 14px;
+}
+
+/****** Hébergements ***********/
+
+.hebergements {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cartes-hebergements {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.cartes-hebergements a {
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    background-color: var(--couleur-blanche);
+}
+
+.carte {
+    width: 100%;
+    height: 100%;
+}
+
+.carte img {
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 5px 5px 9px 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cartes-hebergements p {
+    margin: 0;
+}
+
+.contenu-carte {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 15px 15px 15px;
+}
+
+.texte-carte {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+/****** Populaires ***********/
+
+.populaires {
+    width: 32%;
+}
+
+.titre-populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartes-populaires .carte-pop {
+    display: flex;
+    margin-top: 33px;
+    background-color: var(--couleur-blanche);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cartes-populaires img {
+    object-fit: cover;
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+}
+
+.contenu-carte-pop {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.titre-carte {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.sous-titre-carte {
+    margin: 0;
+}
+
+.note-carte {
+    margin-bottom: 5px;
+}
+
+/******* Activités à Marseille *******/
+
+.section-activites {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.cartes-activites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.carte-activite img {
+    object-fit: cover;
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cartes-activites a {
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+}
+
+.nom-activite {
+    margin: 0;
+    padding: 20px 19px;
+}
+
+/***** Pied de page ******/
+
+footer {
+    display: flex;
+    background-color: var(--couleur-fond-principale);
+    padding: 30px;
+}
+
+.a-propos,
+.nos-hebergements,
+.assistance {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
 
